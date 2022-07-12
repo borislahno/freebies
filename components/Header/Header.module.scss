@@ -1,0 +1,33 @@
+@import "styles/variables";
+
+.header {
+  padding: 45px 0;
+
+  & > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.list {
+  display: flex;
+  gap: 40px;
+}
+
+.signIn {
+  &:link, &:visited {
+    color: $color-black-light;
+    font-weight: 500;
+    margin-right: 30px;
+  }
+
+  &:hover, &:active{
+    color: $color-dark-gray;
+  }
+}
+
+.signUp{
+  width: 150px;
+  height: 45px;
+}

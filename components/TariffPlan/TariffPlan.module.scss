@@ -1,0 +1,29 @@
+@import "styles/variables";
+
+.tariffPlan {
+  padding: 80px 0 150px 0;
+  text-align: center;
+  background-color: $color-light-gray-4;
+}
+
+.text {
+  max-width: 555px;
+  margin: 0 auto;
+  line-height: 1.875rem;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.plansBox {
+  display: flex;
+  gap: 50px;
+}
+
+.button{
+  width: 178px;
+  height: 45px;
+}
+
+.select {
+  border: 2px solid $color-red-light-2;
+}

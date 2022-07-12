@@ -1,0 +1,47 @@
+@use "styles/mixin";
+@import "styles/variables";
+
+.about {
+  padding: 0 20px 135px 20px;
+
+  & > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+.img {
+  flex: 0 0 44.5%;
+}
+
+.content {
+  flex: 0 0 37.8%;
+}
+
+.text {
+  line-height: 1.875rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.list {
+
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  @include mixin.fontConfig(0.875rem, 400, 1.875rem);
+
+  &::before {
+    font-size: 1.2rem;
+    color: $color-green;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}

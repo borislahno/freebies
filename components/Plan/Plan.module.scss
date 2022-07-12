@@ -1,0 +1,43 @@
+@use "styles/mixin";
+@import "styles/variables";
+
+
+.plan {
+  padding: 80px 70px 50px 75px;
+  background-color: $color-white;
+  border: 2px solid $color-light-gray-1;
+  border-radius: 10px;
+}
+
+.img {
+  margin-bottom: 30px;
+}
+
+.planName {
+  @include mixin.fontConfig(1.125rem, 500, 1.875rem);
+  color: $color-black-light;
+  margin-bottom: 30px;
+}
+
+.item {
+  @include mixin.fontConfig(0.875rem, 400, 1.875rem);
+  text-align: left;
+  padding-left: 39px;
+  background: url("/mark.svg") left no-repeat;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.price {
+  @include mixin.fontConfig(1.56rem, 500, 1.875rem);
+  color: $color-black-light;
+  margin-top: 50px;
+  margin-bottom: 20px;
+
+  span {
+    color: $default-text-color;
+    @include mixin.fontConfig(1.4rem, 400, 1.875rem);
+  }
+}

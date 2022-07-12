@@ -1,0 +1,34 @@
+@use "styles/mixin";
+@import "styles/variables";
+
+.metric {
+  display: flex;
+  align-items: center;
+  gap: 36.5px;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: $color-pink-light;
+  color: $color-red-light-2;
+  font-size: 1.2rem;
+}
+
+.content {
+
+}
+
+.count {
+  @include mixin.fontConfig(1.56rem, 700, 1.875rem);
+  color: $color-black-light;
+  margin-bottom: 5px;
+}
+
+.name {
+  @include mixin.fontConfig(1.25rem, 400, 1.875rem);
+}

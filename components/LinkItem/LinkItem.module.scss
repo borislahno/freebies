@@ -1,0 +1,15 @@
+
+.link {
+
+  &:link,
+  &:visited {
+    color: inherit;
+    line-height: 1.25rem;
+    transition: color 0.1s;
+  }
+
+  &:hover,
+  &:active {
+    color: #F53838;
+  }
+}

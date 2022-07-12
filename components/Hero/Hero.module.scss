@@ -1,0 +1,26 @@
+
+.hero {
+  padding: 70px 0px 0px 0px;
+
+  & > div {
+    display: flex;
+  }
+}
+
+.content {
+
+}
+
+.text {
+  padding: 20px 0px 50px 0px;
+  line-height: 1.875rem;
+}
+
+.btn {
+  width: 250px;
+  height: 60px;
+}
+
+.img {
+  transform: translateX(70px);
+}
