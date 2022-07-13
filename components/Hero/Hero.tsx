@@ -9,12 +9,15 @@ const Hero: React.FC = () =>
         <Container>
             <div className={styles.content}>
                 <h1 className="heading-primary">Want anything to be easy with LaslesVPN.</h1>
-                <p className={styles.text}>Provide a network for all your needs with ease and fun using LaslesVPN discover interesting features
+                <p className={styles.text}>Provide a network for all your needs with ease and fun using LaslesVPN
+                    discover interesting features
                     from us.
                 </p>
                 <Button className={styles.btn} name="Get Started" type="red"/>
             </div>
-            <img className={styles.img} src="/hero/hero.png" alt="Boys with laptop"/>
+            <div className={`${styles.img}`}>
+                <img src="/hero/hero.png" alt="Boys with laptop"/>
+            </div>
         </Container>
     </section>
 

@@ -36,7 +36,6 @@ const TariffPlan: React.FC = () =>
                     button={
                         <Button className={styles.button} name='Select' type='red-radius-50'/>
                     }
-                    className={styles.select}
                 />
             </div>
         </Container>

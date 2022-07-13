@@ -5,7 +5,9 @@ import styles from './About.module.scss';
 const About: React.FC = () =>
     <section className={styles.about}>
         <Container>
-            <img className={styles.img} src="/about/about.png" alt="Boy with laptop"/>
+            <div className={`${styles.img} iad`}>
+                <img src="/about/about.png" alt="Boy with laptop"/>
+            </div>
             <div className={styles.content}>
                 <h2 className="heading-secondary">We Provide Many Features You Can Use</h2>
                 <p className={styles.text}>You can explore the features that we provide with fun and have their own

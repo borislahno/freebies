@@ -23,7 +23,7 @@ const Header: React.FC = () => {
             <Container>
                 <Logo/>
                 <Navigation list={navigationList}/>
-                <div>
+                <div className={styles.button}>
                     <a className={styles.signIn} href="#">Sign In</a>
                     <Button className={styles.signUp} name='Sign Up' type='transparent-red'/>
                 </div>

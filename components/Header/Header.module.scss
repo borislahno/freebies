@@ -1,18 +1,35 @@
 @import "styles/variables";
 
 .header {
-  padding: 45px 0;
+  padding: 45px 20px;
 
   & > div {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+
+  @media (max-width: $tablets) {
+    padding: 20px 20px;
+  }
 }
 
 .list {
   display: flex;
   gap: 40px;
+
+  @media (max-width: 1000px) {
+    gap: 20px;
+  }
+  @media (max-width: $tablets) {
+    display: none;
+  }
+}
+
+.button {
+  @media (max-width: $tablets) {
+    display: none;
+  }
 }
 
 .signIn {
@@ -22,12 +39,12 @@
     margin-right: 30px;
   }
 
-  &:hover, &:active{
+  &:hover, &:active {
     color: $color-dark-gray;
   }
 }
 
-.signUp{
+.signUp {
   width: 150px;
   height: 45px;
 }

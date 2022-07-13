@@ -23,6 +23,7 @@
 
 .red {
   position: relative;
+  z-index: 1;
   background: #F53838;
   border-radius: 10px;
   color: $color-white;
@@ -30,6 +31,7 @@
   &::after {
     content: '';
     position: absolute;
+    z-index: -1;
     top: 25px;
     width: 84%;
     height: 100%;
@@ -46,6 +48,7 @@
 
 .red-radius-50 {
   position: relative;
+  z-index: 1;
   background: #F53838;
   border-radius: 50px;
   color: $color-white;
@@ -53,6 +56,7 @@
   &::after {
     content: '';
     position: absolute;
+    z-index: -1;
     top: 17px;
     width: 75%;
     height: 100%;

@@ -1,0 +1,80 @@
+@import "styles/variables";
+
+.slider {
+
+}
+
+.path {
+  position: relative;
+  display: flex;
+  gap: 50px;
+  transition: left 0.4s;
+
+  @media (max-width: $phones) {
+    overflow: auto;
+    -ms-overflow-style: none;
+
+    &::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+    }
+  }
+}
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+
+  @media (max-width: $phones) {
+    display: none;
+  }
+}
+
+.pagination{
+  display: flex;
+  gap: 15px;
+}
+
+.dot{
+  width: 15px;
+  height: 15px;
+  background-color: $color-light-gary-2;
+  border-radius: 50%;
+}
+
+.active{
+  background-color: $color-red-light-2;
+}
+
+.control {
+  display: flex;
+  gap: 20px;
+}
+
+.sliderButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.left {
+  border: 2px solid $color-red-light-2;
+  color: $color-red-light-2;
+}
+
+.right {
+  background-color: $color-red-light-2;
+  color: $color-white;
+
+}

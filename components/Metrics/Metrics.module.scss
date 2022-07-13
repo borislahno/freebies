@@ -13,6 +13,11 @@
   background-color: $color-white;
   border-radius: 10px;
 
+  @media(max-width: $phones) {
+    flex-direction: column;
+    gap:20px
+  }
+
   &::after {
     content: '';
     position: absolute;
@@ -31,4 +36,8 @@
   width: 2px;
   height: 125px;
   background-color: $color-light-gray-3;
+  @media(max-width: $phones) {
+    width: 250px;
+    height: 2px;
+  }
 }

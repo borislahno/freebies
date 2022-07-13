@@ -5,6 +5,14 @@
   display: flex;
   align-items: center;
   gap: 36.5px;
+
+  @media(max-width: $small-tablets) {
+    gap: 14px;
+  }
+
+  @media (max-width: $phones) {
+    width: 170px;
+  }
 }
 
 .icon {

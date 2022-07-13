@@ -4,20 +4,49 @@
 .about {
   padding: 0 20px 135px 20px;
 
+  @media (max-width: $tablets) {
+    padding: 0 20px 70px 20px;
+  }
+
   & > div {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
+    
+    @media (max-width: $small-tablets) {
+      flex-direction: column;
+    }
   }
 }
 
 .img {
   flex: 0 0 44.5%;
+  min-height: 415px;
+
+  @media (max-width: $landscape-tablets) {
+    flex: 0 0 48%;
+  }
+  @media (max-width: $tablets) {
+    flex: 0 0 50%;
+  }
+
+  @media (max-width: $small-tablets) {
+    width: 80%;
+    padding-top: 67%;
+    min-height: 0;
+  }
 }
 
 .content {
   flex: 0 0 37.8%;
+
+  @media (max-width: $landscape-tablets) {
+    flex: 0 0 42%;
+  }
+  @media (max-width: $tablets) {
+    max-width: 450px;
+  }
 }
 
 .text {

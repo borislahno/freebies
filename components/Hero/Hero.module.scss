@@ -1,9 +1,21 @@
+@import "styles/variables";
 
 .hero {
-  padding: 70px 0px 0px 0px;
+  padding: 70px 20px 0px 20px;
 
   & > div {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+
+  @media (max-width: $landscape-tablets) {
+    padding: 30px 20px 0px 20px;
+  }
+
+  @media (max-width: $tablets) {
+    padding: 10px 20px 0px 20px;
   }
 }
 
@@ -14,13 +26,27 @@
 .text {
   padding: 20px 0px 50px 0px;
   line-height: 1.875rem;
+  flex: 0 0 48%;
+
+  @media (max-width: $landscape-tablets) {
+    padding: 20px 0px 25px 0px;
+  }
 }
 
 .btn {
   width: 250px;
   height: 60px;
+
+  @media (max-width: $tablets) {
+    width: 200px;
+    height: 50px;
+  }
 }
 
 .img {
-  transform: translateX(70px);
+  flex: 0 0 48%;
+
+  img {
+    width: 100%;
+  }
 }

@@ -7,14 +7,13 @@ type PlanProps = {
     planList: string[],
     price?: number,
     button: ReactNode,
-    className?: string,
 }
 
-const Plan: React.FC<PlanProps> = ({imageUrl, planName, planList, price, button, className}) =>
-    <div className={`${styles.plan} ${className || ''}`}>
+const Plan: React.FC<PlanProps> = ({imageUrl, planName, planList, price, button}) =>
+    <div className={styles.plan}>
         <img className={styles.img} src={imageUrl} alt="Plan image"/>
         <p className={styles.planName}>{planName}</p>
-        <ul>
+        <ul className={styles.list}>
             {planList.map(item =>
                 <li className={styles.item} key={item}>{item}</li>
             )}
