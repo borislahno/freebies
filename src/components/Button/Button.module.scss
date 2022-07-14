@@ -1,0 +1,77 @@
+@import "../../styles/variables";
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+
+  &:hover {
+    transform: translateY(-3px);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+.transparent-red {
+  border: 1px solid #F53855;
+  border-radius: 50px;
+  color: #F53855;
+}
+
+.red {
+  position: relative;
+  z-index: 1;
+  background: #F53838;
+  border-radius: 10px;
+  color: $color-white;
+
+  &::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 25px;
+    width: 84%;
+    height: 100%;
+    background: rgba($color-red-light-1, 0.35);
+    filter: blur(30px);
+    border-radius: 10px;
+    pointer-events: none;
+
+    @media (max-width: $small-tablets) {
+      top: 10px;
+      filter: blur(20px);
+    }
+  }
+
+  &:hover {
+    opacity: .9;
+  }
+}
+
+.red-radius-50 {
+  position: relative;
+  z-index: 1;
+  background: #F53838;
+  border-radius: 50px;
+  color: $color-white;
+
+  &::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 17px;
+    width: 75%;
+    height: 100%;
+    background: rgba($color-red-light-1, 0.35);
+    filter: blur(20px);
+    border-radius: 60px;
+    pointer-events: none;
+  }
+
+  &:hover {
+    opacity: .9;
+  }
+}

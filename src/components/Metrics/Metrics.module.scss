@@ -1,0 +1,51 @@
+@import "../../styles/variables";
+
+.metrics {
+  padding: 105px 20px 96px 20px;
+
+  @media (max-width: $small-tablets) {
+    padding: 50px 20px 75px 20px;
+  }
+}
+
+.content {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 37px 10px;
+  background-color: $color-white;
+  border-radius: 10px;
+
+  @media(max-width: $small-tablets) {
+    padding: 15px 10px;
+  }
+
+  @media(max-width: $phones) {
+    flex-direction: column;
+    gap:20px
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 35px;
+    width: 100%;
+    height: 100%;
+    background-color: $color-black-light-2;
+    opacity: 0.06;
+    filter: blur(30px);
+    border-radius: 10px;
+  }
+}
+
+.verticalLine {
+  width: 2px;
+  height: 125px;
+  background-color: $color-light-gray-3;
+  @media(max-width: $phones) {
+    width: 250px;
+    height: 2px;
+  }
+}

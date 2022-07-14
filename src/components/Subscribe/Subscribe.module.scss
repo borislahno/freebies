@@ -1,0 +1,69 @@
+@import "../../styles/variables";
+
+.subscribe {
+  padding: 0 20px;
+  margin-bottom: -117px;
+}
+
+.box {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 59px 70px;
+  background-color: $color-white;
+  border-radius: 10px;
+
+  @media (max-width: $tablets) {
+    padding: 25px 20px;
+  }
+  @media (max-width: $small-tablets) {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+ &::after {
+    content: '';
+    position: absolute;
+    top: 40px;
+    z-index: -1;
+    width: 80%;
+    height: 100%;
+    background-color: rgba($color-black-light-2, 0.1);
+    filter: blur(100px);
+    border-radius: 10px;
+  }
+}
+
+.content {
+
+}
+
+.title {
+  max-width: 372px;
+  margin-bottom: 17px;
+  @media (max-width: $small-tablets) {
+    max-width: none;
+    text-align: center;
+  }
+
+  @media (max-width: $phones) {
+    margin-bottom: 7px;
+  }
+}
+
+.text {
+  @media (max-width: $small-tablets) {
+    text-align: center;
+  }
+}
+
+.button {
+  width: 250px;
+  height: 60px;
+
+  @media (max-width: $phones) {
+    width: 200px;
+    height: 50px;
+  }
+}

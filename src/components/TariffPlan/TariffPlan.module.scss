@@ -1,0 +1,58 @@
+@import "../../styles/variables";
+
+.tariffPlan {
+  padding: 80px 20px 150px 20px;
+  text-align: center;
+  background-image: linear-gradient(to bottom, $color-light-gray-4, $color-white);
+
+  @media (max-width: $tablets) {
+    padding: 40px 20px 130px 20px;
+  }
+}
+
+.text {
+  max-width: 555px;
+  margin: 0 auto;
+  line-height: 1.875rem;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  @media (max-width: $tablets) {
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: $phones) {
+    max-width: 400px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+}
+
+.plansBox {
+  max-width: 1090px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+
+  @media (max-width: 1070px) {
+    text-align: center;
+    flex-direction: column;
+    max-width: 500px;
+    gap: 30px;
+  }
+
+  @media (max-width: $phones) {
+    max-width: 300px;
+  }
+}
+
+.button {
+  width: 178px;
+  height: 45px;
+
+  @media (max-width: $phones) {
+    width: 120px;
+    height: 40px;
+  }
+}

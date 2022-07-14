@@ -1,0 +1,12 @@
+@use '../../styles/mixin';
+@import "../../styles/variables";
+
+.logoBox {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  @include mixin.fontConfig(1.25rem, 700, 1.48rem);
+  color: $color-black-light;
+}
