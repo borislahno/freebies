@@ -8,12 +8,16 @@
     padding: 0 20px 70px 20px;
   }
 
+  @media (max-width: $phones) {
+    padding: 0 20px 30px 20px;
+  }
+
   & > div {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
-    
+
     @media (max-width: $small-tablets) {
       flex-direction: column;
     }
@@ -53,6 +57,11 @@
   line-height: 1.875rem;
   margin-top: 20px;
   margin-bottom: 20px;
+
+  @media (max-width: $phones) {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 }
 
 .list {

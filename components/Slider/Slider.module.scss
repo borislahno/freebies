@@ -11,6 +11,7 @@
   transition: left 0.4s;
 
   @media (max-width: $phones) {
+    gap: 20px;
     overflow: auto;
     -ms-overflow-style: none;
 
@@ -21,7 +22,7 @@
   }
 }
 
-.footer{
+.footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -32,19 +33,19 @@
   }
 }
 
-.pagination{
+.pagination {
   display: flex;
   gap: 15px;
 }
 
-.dot{
+.dot {
   width: 15px;
   height: 15px;
   background-color: $color-light-gary-2;
   border-radius: 50%;
 }
 
-.active{
+.active {
   background-color: $color-red-light-2;
 }
 

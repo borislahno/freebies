@@ -2,6 +2,10 @@
 
 .metrics {
   padding: 105px 20px 96px 20px;
+
+  @media (max-width: $small-tablets) {
+    padding: 50px 20px 75px 20px;
+  }
 }
 
 .content {
@@ -12,6 +16,10 @@
   padding: 37px 10px;
   background-color: $color-white;
   border-radius: 10px;
+
+  @media(max-width: $small-tablets) {
+    padding: 15px 10px;
+  }
 
   @media(max-width: $phones) {
     flex-direction: column;

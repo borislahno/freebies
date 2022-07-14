@@ -1,13 +1,22 @@
+@import "styles/variables";
 
 .feedback {
   padding: 0 20px 88px 20px;
   overflow: hidden;
+
+  @media (max-width: $phones) {
+    padding: 0 20px 44px 20px;
+  }
 }
 
 .title {
   max-width: 448px;
   text-align: center;
   margin: 0 auto 20px auto;
+
+  @media (max-width: $phones) {
+    margin: 0 auto 10px auto;
+  }
 }
 
 .text {
@@ -15,4 +24,8 @@
   line-height: 1.875rem;
   text-align: center;
   margin: 0 auto 60px auto;
+
+  @media (max-width: $phones) {
+    margin: 0 auto 30px auto;
+  }
 }

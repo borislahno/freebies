@@ -39,6 +39,11 @@
     filter: blur(30px);
     border-radius: 10px;
     pointer-events: none;
+
+    @media (max-width: $small-tablets) {
+      top: 10px;
+      filter: blur(20px);
+    }
   }
 
   &:hover {

@@ -8,7 +8,8 @@
   border-radius: 10px;
 
   @media (max-width: $phones) {
-    flex: 0 0 340px;
+    flex: 0 0 300px;
+    padding: 15px;
   }
 }
 
@@ -17,12 +18,19 @@
   justify-content: space-between;
   align-items: center;
   gap: 15px;
+  @media (max-width: $phones) {
+    gap: 8px;
+  }
 }
 
 .customer {
   display: flex;
   align-items: center;
   gap: 20px;
+
+  @media (max-width: $phones) {
+    gap: 10px;
+  }
 }
 
 .img {

@@ -15,7 +15,7 @@ const Hero: React.FC = () =>
                 </p>
                 <Button className={styles.btn} name="Get Started" type="red"/>
             </div>
-            <div className={`${styles.img}`}>
+            <div className={styles.img}>
                 <img src="/hero/hero.png" alt="Boys with laptop"/>
             </div>
         </Container>

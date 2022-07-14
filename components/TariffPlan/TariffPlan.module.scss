@@ -20,6 +20,12 @@
     margin-top: 15px;
     margin-bottom: 30px;
   }
+
+  @media (max-width: $phones) {
+    max-width: 400px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
 }
 
 .plansBox {
@@ -35,9 +41,18 @@
     max-width: 500px;
     gap: 30px;
   }
+
+  @media (max-width: $phones) {
+    max-width: 300px;
+  }
 }
 
 .button {
   width: 178px;
   height: 45px;
+
+  @media (max-width: $phones) {
+    width: 120px;
+    height: 40px;
+  }
 }

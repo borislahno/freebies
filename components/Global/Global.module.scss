@@ -7,12 +7,19 @@
   @media (max-width: $tablets) {
     padding: 0px 20px 80px 20px;
   }
+
+  @media (max-width: $phones) {
+    padding: 0px 20px 60px 20px;
+  }
 }
 
 .title {
   max-width: 383px;
   text-align: center;
   margin: -60px auto 20px auto;
+  @media (max-width: $phones) {
+    margin: -60px auto 10px auto;
+  }
 }
 
 .text {
@@ -25,6 +32,9 @@
   @media (max-width: $tablets) {
     margin: 0 auto 50px auto;
   }
+  @media (max-width: $phones) {
+    margin: 0 auto 25px auto;
+  }
 }
 
 .img {
@@ -34,6 +44,10 @@
 
   @media (max-width: $landscape-tablets) {
     margin-bottom: 70px;
+  }
+
+  @media (max-width: $phones) {
+    margin-bottom: 40px;
   }
 }
 
@@ -59,5 +73,9 @@
 .companyLogo {
   @media (max-width: $small-tablets) {
     width: 130px;
+  }
+
+  @media (max-width: $phones) {
+    width: 85px;
   }
 }
